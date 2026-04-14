@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=EXAMPLE1",
+    "success": false,
+    "error": "\u001b[0;31mERROR:\u001b[0m [youtube:truncated_id] EXAMPLE1: Incomplete YouTube ID EXAMPLE1. URL https://www.youtube.com/watch?v=EXAMPLE1 looks truncated."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=EXAMPLE2",
+    "success": false,
+    "error": "\u001b[0;31mERROR:\u001b[0m [youtube:truncated_id] EXAMPLE2: Incomplete YouTube ID EXAMPLE2. URL https://www.youtube.com/watch?v=EXAMPLE2 looks truncated."
+  }
+]

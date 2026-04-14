@@ -1,0 +1,3 @@
+yt-dlp>=2023.10.13
+requests>=2.31.0
+Pillow>=10.0.0  # For thumbnail extraction (optional)

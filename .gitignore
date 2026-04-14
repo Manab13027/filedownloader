@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.env
+.env.*
+.venv
+venv/
+env/
+ENV/
+
+# Downloaded files (don't commit user downloads)
+downloads/
+*.mp4
+*.mp3
+*.mkv
+*.webm
+*.jpg
+*.jpeg
+*.png
+
+# Secrets
+credentials.json
+secrets.json
+*.key
+*.pem
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
