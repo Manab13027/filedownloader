@@ -1,40 +1,25 @@
-# Filedownloader
+# File Downloader
 
-_TODO: one line on what this project does and who it's for._
+A **Flask web app for downloading videos and files** from URLs. Paste a link and
+it queues the download, tracks progress/status, and lets you grab the finished
+file from the browser. Supports common video formats and uses `yt-dlp` for
+site-aware downloads (including Mail.ru via `mailru.py`).
 
-**Stack:** Python
+## Features
+- Browser UI (Flask + templates) — no desktop app needed
+- Queued downloads with live status + history
+- `yt-dlp`-powered extraction across many sites
+- Handles mp4/mkv/webm/mov/avi and more; 16 MB request cap for direct uploads
+
+## Stack
+Python · Flask · yt-dlp · requests
 
 ## Getting started
-
 ```bash
 pip install -r requirements.txt
-python <entry>.py
-```
-
-## Dependencies
-
-- `yt-dlp>=2023.10.13`
-- `requests>=2.31.0`
-- `Pillow>=10.0.0  # For thumbnail extraction (optional)`
-
-## Project structure
-
-```
-downloads/
-filedownloader.py
-filedownloader1.py
-mailru.py
-my_videos/
-push_to_github.sh
-requirements.txt
-temp/
-templates/
+python filedownloader.py          # serves the web UI
 ```
 
 ## Notes
-
-_TODO: anything a new user should know — configuration, env vars, known limitations._
-
----
-
-_README scaffolded by readme_gen. Edit the TODOs to finish it._
+- Downloads land in `downloads/`; temporary files in `temp/`.
+- Only download content you have the right to download.
